@@ -1,5 +1,5 @@
 # Benim çözdüğüm
-# Çözüm sayısı 1 | Hedef 5 çözüm
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def findWords(self, words):
         a = set('asdfghjklASDFGHJKL')
@@ -20,7 +20,7 @@ class Solution(object):
         for i in s:
             if i not in keyboard: return False
         return True
-        
+
 
 print(Solution().findWords(['a','b']))
 print(Solution().findWords(["Hello","Alaska","Dad","Peace"]))

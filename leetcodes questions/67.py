@@ -22,4 +22,3 @@ class Solution(object):
 
 print(Solution().addBinary("110", "101"))
 
-
