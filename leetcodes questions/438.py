@@ -3,26 +3,26 @@ from typing import Counter
 # Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def findAnagrams(self, s, p):
-        countTarget = Counter(p)
+        res, countS, countP = [], {}, Counter(p)
+        start = 0
 
-        windowStart, letterCount, result = 0, {}, []
+        for end in range(len(s)):
+            countS[s[end]] = 1 + countS.get(s[end], 0)
 
-        for windowEnd in range(len(s)):
-            letterCount[s[windowEnd]] = 1 + letterCount.get(s[windowEnd], 0)
+            if (end - start + 1) >= len(p):
+                if countS == countP: res.append(start)
 
-            if windowEnd - windowStart >= len(p) - 1:
-                if countTarget == letterCount:
-                    result.append(windowStart)
+                countS[s[start]] -= 1
+                if countS[s[start]] == 0:
+                    countS.pop(s[start])
 
-                letterCount[s[windowStart]] -= 1
-                if letterCount[s[windowStart]] == 0:
-                    del letterCount[s[windowStart]]
-                
-                windowStart += 1
+                start += 1
         
-        return result
+        return res
 
 
+
+print(Solution().findAnagrams('cbaebabacd', 'abc'))
 
 # Adamın çözdüğü
 # Çözüm sayısı 0 | Hedef 5 çözüm
@@ -51,4 +51,3 @@ class Solution(object):
         
         return res
 
-print(Solution().findAnagrams('cbaebabacd', 'abc'))

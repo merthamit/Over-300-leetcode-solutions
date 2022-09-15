@@ -16,6 +16,8 @@ class Solution(object):
         return res[::-1]
 
 # Karışık arraylerde işe yaramaz her iki tarafı sıralı olmak zorunda...
-       
+# Eğer sıralamayı ilk başta küçükten büyüye yaparsak şu sonuç ortaya çıkıyor bir sonraki rakamın en küçük sayı olup olmadığını bilmiyorsun ama büyükten
+# küçüğe doğru sıraladığında bunu biliyorsun. örn -50, -49 -48, 0, 5, 10, 100  [50, 49, 48... ] böyle gidiyor hani 10? yok çünkü dediğim gibi.
+              
 print(Solution().sortedSquares([-4,-1,0,3,10]))
 print(Solution().sortedSquares([-5,-3,-2,-1]))

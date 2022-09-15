@@ -16,6 +16,7 @@ class Solution(object):
 
         return res
 
+
 # Prefixde ilk olarak solundaki sayıları bulup çarpıyor
 # Postfixde ise sağındaki sayıların çarpımını buluyor ve bastırıyor.
 

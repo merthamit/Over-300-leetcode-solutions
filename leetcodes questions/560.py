@@ -15,10 +15,6 @@ class Solution(object):
         
         return res
 
-
+# 15.09.2022 eğer çıkardığında sonuç soldaki topladığın sayılar kalan ise o zaman res += 1
 # print(Solution().subarraySum([1,2,1,2,1], 3))
 print(Solution().subarraySum([1,2,3,0,0,5,-2], 3))
-# print(Solution().subarraySum([3, 3 ,3], 3))
-# print(Solution().subarraySum([-1,1,0], 0))
-# print(Solution().subarraySum([1,1,1], 2))
-# print(Solution().subarraySum([10, 20 , 30 , 40], 2))

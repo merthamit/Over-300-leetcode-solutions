@@ -1,5 +1,5 @@
 # Adamın çözdüğü
-# Çözüm sayısı 4 | Hedef 5 çözüm
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class ListNode(object):
     def __init__(self):
         return ''

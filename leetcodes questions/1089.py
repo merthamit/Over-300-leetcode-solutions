@@ -17,6 +17,8 @@ class Solution(object):
         return arr
 
 # Benim çözdüğüm O(n) Time complexity
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def duplicateZeros(self, arr):
         q = []
