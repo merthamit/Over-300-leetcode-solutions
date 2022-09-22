@@ -19,15 +19,14 @@ class Solution2(object):
 # Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def isAnagram(self, s, t):
-        if len(s) != len(t):
-            return False
+        if len(s) != len(t): return False
         
         countS, countT = {}, {}
         for i in range(len(s)):
             countS[s[i]] = 1 + countS.get(s[i], 0)
             countT[t[i]] = 1 + countT.get(t[i], 0)
         
-        return True if countS == countT else False
+        return countS == countT
 
 
 print(Solution().isAnagram('sellam','llseam'))

@@ -10,6 +10,7 @@ class Solution(object):
         return res
 
 # Şu anlık bilmem gereken biri hariç diğer sayılar iki kez görünüyorsa bu algoritma kullanılır ve tek geçen eleman bulunur.
+# [4, 1, 2, 1, 2] xor aynı sayıları 0 lıyor ve 4 cevabı ortaya çıkıyor. 1 ve 1, 2 ve 2 ve cevap 4.
 
 
 
