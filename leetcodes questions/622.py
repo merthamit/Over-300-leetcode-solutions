@@ -1,3 +1,6 @@
+
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class ListNode(object):
     def __init__(self, val, next, prev):
         self.val = val

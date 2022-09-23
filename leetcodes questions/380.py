@@ -1,5 +1,7 @@
 from random import random
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 
 class RandomizedSet(object):
 
