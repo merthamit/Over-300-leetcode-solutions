@@ -25,7 +25,6 @@ class Solution2(object):
         return ''.join(map(str,result))
 
 
-# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def reversePrefix(self, word, ch):
         left, right = 0, 0
@@ -51,6 +50,26 @@ class Solution(object):
 
         return word 
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
+class Solution(object):
+    def reversePrefix(self, word, ch):
+        res = []
+        start = 0
 
+        for i in range(len(word)):
+            if word[i] == ch:
+                start = i
+                break
+
+        if start == 0: return word
+
+        for i in range(start, -1, -1):
+            res.append(word[i])
+
+        for i in range(start+1, len(word)):
+            res.append(word[i])
+        
+        return ''.join(res)
 
 print(Solution().reversePrefix('abcdefd', 'd'))

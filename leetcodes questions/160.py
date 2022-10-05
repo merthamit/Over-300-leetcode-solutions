@@ -13,5 +13,5 @@ class Solution(object):
             l1 = l1.next if l1 else headB
             l2 = l2.next if l2 else headA
         return l1
-
+# l1 ve l2 eşit olunca return l1 oluyor ve eğer kesiştiği yer yoksa bu sefer None da buluşacaklar ve l1 None olacak dönecek
 print(Solution().getIntersectionNode())

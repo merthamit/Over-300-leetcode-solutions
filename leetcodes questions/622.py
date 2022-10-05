@@ -1,6 +1,7 @@
 
 # Adamın çözdüğü
 # Çözüm sayısı 0 | Hedef 5 çözüm
+
 class ListNode(object):
     def __init__(self, val, next, prev):
         self.val = val
@@ -16,7 +17,7 @@ class MyCircularQueue(object):
         self.left.next = self.right
 
     def enQueue(self, value):
-        if self.isFull(): return False
+        if self.isFull(): return
         cur = ListNode(value, self.right, self.right.prev)
         self.right.prev.next = cur
         self.right.prev = cur
@@ -24,7 +25,7 @@ class MyCircularQueue(object):
         return True
     
     def deQueue(self):
-        if self.isEmpty(): return False
+        if self.isEmpty(): return
         self.left.next = self.left.next.next
         self.left.next.prev = self.left
         self.space += 1
@@ -43,7 +44,6 @@ class MyCircularQueue(object):
         
     def isFull(self):
         return self.space == 0
-        
 
 
 # Your MyCircularQueue object will be instantiated and called as such:

@@ -21,4 +21,5 @@ class Solution(object):
         
         return True
 
+print(Solution().lemonadeChange([5,5,5,10,10,20]))
 print(Solution().lemonadeChange([5,5,10,10,20]))

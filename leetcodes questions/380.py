@@ -14,17 +14,16 @@ class RandomizedSet(object):
             self.dictArr[val] = len(self.arr)
             self.arr.append(val)
             return True
-        return False        
+        return False
+
     def remove(self, val):
         if val in self.dictArr:
             self.dictArr[self.arr[-1]] = self.dictArr[val]
             self.arr[self.dictArr[val]] = self.arr[-1]
-            
-            self.arr.pop()
             self.dictArr.pop(val)
+            self.arr.pop()
             return True
         return False
-        
 
     def getRandom(self):
         return random.choice(self.arr)
