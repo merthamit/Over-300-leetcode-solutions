@@ -7,6 +7,8 @@
 import collections
 
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def zigzagLevelOrder(self, root):
         if not root: return root
@@ -26,6 +28,6 @@ class Solution(object):
                     q.append(node.left)
                 if node.right:
                     q.append(node.right)
-            zigzag = not zigzag
             res.append(total[::-1] if zigzag else total)
+            zigzag = not zigzag
         return res

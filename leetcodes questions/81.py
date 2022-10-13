@@ -23,7 +23,9 @@ class Solution(object):
                     l = mid + 1
         
         return False
+        
 
+# Eğer yukardıkaki while r > l işlemlerini yapmazsak mid'in sağ tarafamı sol tarafamı ait olduğunu öğrenemiyoruz.
 print(Solution().search([2,5,6,0,1,2], 5))
 print(Solution().search([1,0,2,3,4], 3))
 

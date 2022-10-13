@@ -30,6 +30,9 @@ class Solution(object):
         
         return res
 
+
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def levelOrder(self, root):
         if not root: return root

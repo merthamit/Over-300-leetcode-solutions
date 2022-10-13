@@ -34,6 +34,9 @@ class Solution(object):
 
 # O(n) time 
 # O(1) space
+
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def connect(self, root):
         if not root: return root

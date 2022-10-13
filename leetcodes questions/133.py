@@ -9,25 +9,23 @@ class Node(object):
         self.neighbors = neighbors if neighbors is not None else []
 
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def cloneGraph(self, node):
         if not node: return node
-        
         q = collections.deque()
         q.append(node)
         cloned = {}
         cloned[node] = Node(node.val, [])
-        
+
         while q:
             qNode = q.popleft()
-            
-            for neighbor in qNode.neighbors:
-                if neighbor not in cloned:
-                    cloned[neighbor] = Node(neighbor.val, [])
-                    q.append(neighbor)
-                cloned[qNode].neighbors.append(cloned[neighbor])
+
+            for i in qNode.neighbors:
+                if i not in cloned:
+                    cloned[i] = Node(i.val, [])
+                    q.append(i)
+                cloned[qNode].neighbors.append(cloned[i])
         
         return cloned[node]
-
-
-        
