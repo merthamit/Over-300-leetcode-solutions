@@ -7,7 +7,8 @@
 
 import collections
 
-
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def distanceK(self, root, target, k):
         if not root: return root

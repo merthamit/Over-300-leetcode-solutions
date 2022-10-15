@@ -1,6 +1,8 @@
 import collections
 
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def rightSideView(self, root):
         if not root: return root
