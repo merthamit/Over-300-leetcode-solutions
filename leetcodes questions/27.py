@@ -24,7 +24,5 @@ class Solution(object):
                 nums[k] = nums[i]
                 k += 1
         return k
-        
 # Düşünülmesi gereken şu val a eşit olmayan numaraları başa getiriyorum gibi düşün böyle düşünmenin daha kolay olacağı çok açık.
-        
 print(Solution().removeElement([3,5,1,2,9,3,4],2))
