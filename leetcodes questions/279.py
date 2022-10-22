@@ -24,6 +24,8 @@ class Solution(object):
                     q.append((mlt, turn + 1))
         
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def numSquares(self, n):
         dp = [n] * (n + 1)
@@ -36,7 +38,6 @@ class Solution(object):
                 if target - square < 0: break
 
                 dp[target] = min(dp[target], 1 + dp[target - square])
-                print(target, square, dp[target])
 
         return dp[n]
 

@@ -21,12 +21,19 @@ class Solution(object):
                 q.append((firstNode.left, lvl + 1))
             if firstNode.right:
                 q.append((firstNode.right, lvl + 1))
-                
-                
+
+class Solution(object):
+    def minDepth(self, root):
+        if not root: return 0
+        q = collections.deque([(root, 1)])
+        
+        while q:
+            node, lvl = q.popleft()
             
+            if not (node.left or node.right):
+                return lvl
             
-            
-                
-            
-            
-            
+            if node.left:
+                q.append((node.left, lvl + 1))
+            if node.right:
+                q.append((node.right, lvl + 1))

@@ -19,7 +19,9 @@ class Solution(object):
                     q.append((total, count+1))
         return -1
                     
-                
+
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def coinChange(self, coins, amount):
         dp = [amount + 1] * (amount + 1)
