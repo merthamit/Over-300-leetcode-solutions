@@ -1,3 +1,5 @@
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def findTargetSumWays(self, nums, target):
         dp = {}
@@ -13,3 +15,4 @@ class Solution(object):
             return dp[(i, total)]
             
         return backTrack(0, 0)
+# 4,4 ve 4,2 --> 5,3 returnluyor fakat 4,4 ve 4,2 3,3 ün içine hiçbirşey returnlamıyor. O yüzden en sonunda reeturn dp[(i, total )] yapıyoruz.
