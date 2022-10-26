@@ -1,3 +1,5 @@
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def isSameTree(self, p, q):
         if not p and not q: return True
@@ -6,6 +8,8 @@ class Solution(object):
         
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def isSameTree(self, p, q):
         stack = [(p, q)]
