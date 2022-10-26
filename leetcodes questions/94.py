@@ -1,3 +1,5 @@
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def inorderTraversal(self, root):
         res = []
@@ -8,7 +10,8 @@ class Solution(object):
             inorder(root.right)
         inorder(root)
         return res
-
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def inorderTraversal(self, root):
         stack, output = [], []

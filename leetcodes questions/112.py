@@ -1,3 +1,5 @@
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def hasPathSum(self, root, targetSum):
         if not root: return False
@@ -15,6 +17,8 @@ class Solution(object):
              
         return False
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def hasPathSum(self, root, targetSum):
         if not root: return
