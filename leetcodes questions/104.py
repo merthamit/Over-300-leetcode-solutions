@@ -4,6 +4,9 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def maxDepth(self, root):
         if not root: return 0
@@ -19,6 +22,8 @@ class Solution(object):
         
         return maxDepth
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def maxDepth(self, root):
         if not root: return 0
