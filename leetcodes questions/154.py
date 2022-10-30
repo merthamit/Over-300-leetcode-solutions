@@ -23,6 +23,24 @@ class Solution(object):
 
 
 
+# Benim çözdüğüm
+# Çözüm sayısı 0 | Hedef 5 çözüm
+class Solution(object):
+    def findMin(self, nums):
+        l, r = 0, len(nums) - 1
+        
+        while r > l:
+            mid = (l + r) // 2
+            
+            if nums[mid] < nums[r]:
+                r = mid
+            elif nums[mid] > nums[r]:
+                l = mid + 1
+            else:
+                r -= 1
+        
+        return nums[l]
+    
 # Adamın çözdüğü
 # Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
