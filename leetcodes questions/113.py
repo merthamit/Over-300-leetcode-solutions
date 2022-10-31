@@ -1,3 +1,5 @@
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def pathSum(self, root, targetSum):
         if not root: return root
@@ -17,7 +19,8 @@ class Solution(object):
                 stack.append((node.right, total - node.right.val, newArr))
         
         return res
-        
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def pathSum(self, root, targetSum):
         if not root: return root
