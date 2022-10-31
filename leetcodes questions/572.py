@@ -28,6 +28,8 @@ class Solution(object):
         return self.isSame(root.left, subRoot.left) and self.isSame(root.right, subRoot.right)
 
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def isSubtree(self, root, subRoot):
         if not root: return
