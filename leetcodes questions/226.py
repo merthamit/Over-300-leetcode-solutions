@@ -1,6 +1,8 @@
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def invertTree(self, root):
-        if not root: return
+        if not root: return root
         stack = [root]
         
         while stack:
@@ -8,16 +10,13 @@ class Solution(object):
             
             if node:
                 stack.append(node.left)
-                stack.append(node.right)
-                self.changePlace(node)
+                stack.append(node.right)            
+                node.left, node.right = node.right, node.left
         
         return root
-            
-    def changePlace(self, root):
-        tmp = root.left
-        root.left = root.right
-        root.right = tmp
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def invertTree(self, root):
         if not root: return

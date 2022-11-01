@@ -1,4 +1,7 @@
 # Definition for a binary tree node.
+
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
         self.val = val

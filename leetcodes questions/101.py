@@ -4,9 +4,13 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def isSymmetric(self, root):
-        if not (root.left or root.right): return True
+        if not root: return False
         stack = [(root.left, root.right)]
         while stack:
             first, second = stack.pop()
@@ -17,10 +21,11 @@ class Solution(object):
                 if first.val != second.val: return False
                 stack.append((first.left, second.right))
                 stack.append((first.right, second.left))
-
         return True
 
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def isSymmetric(self, root):
         
