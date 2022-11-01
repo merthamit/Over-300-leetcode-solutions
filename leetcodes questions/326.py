@@ -5,6 +5,8 @@ class Solution(object):
         
         return self.isPowerOfThree(n / 3)
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def isPowerOfThree(self, n):
         m = 3 ** 19
