@@ -1,3 +1,6 @@
+from bisect import bisect_left
+
+
 class Solution(object):
     def lengthOfLIS(self, nums):
         dp = [1] * len(nums)
