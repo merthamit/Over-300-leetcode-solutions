@@ -21,6 +21,9 @@ class Solution(object):
         return res
 
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
+# Örüntü şöyle en sondaki ( işaretin gittiği yerlerin kombinasyonu aslında ((())) 3.deyken (()()) 4.ye geliyor en son nereye kadar giderse
 class Solution(object):
     def generateParenthesis(self, n):
         res, stack = [], []
