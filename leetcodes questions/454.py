@@ -16,7 +16,9 @@ class Solution(object):
 # a + b + c + d = 0
 # a + b = -(c + d)
 # a + v = - c - d
-
-
+# 0 <= i, j, k, l < n
+# nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
+ 
+ 
 
 print(Solution().fourSumCount([1, 2], [-2, -1], [-1, 2], [0, 2]))
