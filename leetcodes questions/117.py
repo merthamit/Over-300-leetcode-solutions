@@ -1,6 +1,6 @@
 
 # Adamın çözdüğü
-# Çözüm sayısı 0 | Hedef 5 çözüm
+# Çözüm sayısı 2 | Hedef 5 çözüm
 class Solution(object):
     def connect(self, root):
         if not root: return root
@@ -24,14 +24,13 @@ class Solution(object):
             curr = dummy.next
             
         return root
-
 # YENİ BENİM ÇÖZDÜĞÜM
 class Solution(object):
     def connect(self, root):
         if not root: return root
         
         curr = root
-        pre = Node()
+        pre = 'Node()'
         dummy = None
         while curr:
             if curr.left:
@@ -45,7 +44,7 @@ class Solution(object):
                 
             curr = curr.next
             if not curr:
-                pre = Node()
+                pre =' Node()'
                 curr = dummy
                 dummy = None
                 
