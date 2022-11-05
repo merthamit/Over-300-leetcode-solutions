@@ -1,6 +1,6 @@
 
 # Adamın çözdüğü
-# Çözüm sayısı 2 | Hedef 5 çözüm
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def connect(self, root):
         if not root: return root
