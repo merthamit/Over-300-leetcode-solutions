@@ -20,25 +20,23 @@ class Solution(object):
         
         return res
 # Adamın çözdüğü
-# Çözüm sayısı 0 | Hedef 5 çözüm
+# Çözüm sayısı 1 | Hedef 5 çözüm
 class Solution(object):
     def pathSum(self, root, targetSum):
         if not root: return root
         res = []
-        
         def dfs(root, total, arr):
-            if not root: return
-            newArr = [i for i in arr]
-            newArr.append(root.val)
-            total += root.val 
-            
-            if not root.right and not root.left:
+            if not root: return 
+
+            newArr = arr + [root.val]
+            total += root.val
+
+            if not root.left and not root.right:
                 if total == targetSum: res.append(newArr)
-                    
-            
+
+
             return dfs(root.left, total, newArr) or dfs(root.right, total, newArr)
-        
+
         dfs(root, 0, [])
-        
+
         return res
-                

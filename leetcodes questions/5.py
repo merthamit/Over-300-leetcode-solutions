@@ -23,6 +23,8 @@ class Solution(object):
         return s[l:r+1]
             
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def longestPalindrome(self, s):
         maxLen, res = 0, [-1, -1]

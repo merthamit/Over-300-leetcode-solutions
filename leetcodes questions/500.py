@@ -2,7 +2,7 @@
 # Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def findWords(self, words):
-        a = set('asdfghjklASDFGHJKL')
+        a = set('asdfghjklASDFGHJKL') # --> Burada array oluyor.
         b = set('zxcvbnmZXCVBNM')
         c = set('qwertyuiopQWERTYUIOP')
         result = []

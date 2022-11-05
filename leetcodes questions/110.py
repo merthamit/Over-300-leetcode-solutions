@@ -1,3 +1,5 @@
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def isBalanced(self, root):
         if not root: return True
@@ -15,4 +17,4 @@ class Solution(object):
         
         return dfs(root)[0]
         
-        
+# Burada olay şu normalde abs() kısmını döndersek yetiyor fakat derinliği döndermemiş oluyoruz o yüzden iksini böyle dönderiyoruz.
