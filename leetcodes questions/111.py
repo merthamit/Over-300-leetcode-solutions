@@ -22,6 +22,22 @@ class Solution(object):
             if firstNode.right:
                 q.append((firstNode.right, lvl + 1))
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
+class Solution(object):
+    def minDepth(self, root):
+        if not root: return 0
+        
+        left = self.minDepth(root.left)
+        right = self.minDepth(root.right)
+        
+        if not left:
+            return 1 + right
+        if not right:
+            return 1 + left
+        
+        return 1 + min(left, right)
+
 class Solution(object):
     def minDepth(self, root):
         if not root: return 0
