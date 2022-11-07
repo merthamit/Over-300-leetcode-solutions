@@ -2,9 +2,6 @@
 # Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def isBalanced(self, root):
-        if not root: return True
-        if not root.left and not root.right: return True
-        
         def dfs(root):
             if not root: return [True, 0]
 
