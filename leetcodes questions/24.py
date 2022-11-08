@@ -19,6 +19,8 @@ class Solution(object):
             curr = curr.next
         return listhead.next
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def swapPairs(self, head):
         if not head: return head
