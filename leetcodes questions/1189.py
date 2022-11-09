@@ -1,4 +1,6 @@
 from collections import Counter
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def maxNumberOfBalloons(self, text):
         countTxt = Counter(text)
