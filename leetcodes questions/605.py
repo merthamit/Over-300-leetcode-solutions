@@ -1,3 +1,5 @@
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def canPlaceFlowers(self, flowerbed, n):
         flowerbed = [0] + flowerbed + [0]
