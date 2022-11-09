@@ -11,6 +11,8 @@ class Solution(object):
         backTrack([], 0)
         return res
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def subsets(self, nums):
         if not nums: return nums
