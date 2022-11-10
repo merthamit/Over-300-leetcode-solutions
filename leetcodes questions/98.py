@@ -4,15 +4,15 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def isValidBST(self, root):
-        
-        def valid(node, left, right):
+        def dfs(node, lower, higher):
             if not node: return True
             
-            if not (node.val > left and node.val < right): return False
+            if not (node.val > lower and node.val < higher): return False
             
-            
-            return valid(node.left, left, node.val) and valid(node.right, node.val, right)
+            return dfs(node.left, lower, node.val) and dfs(node.right, node.val, higher)
         
-        return valid(root, float('-inf'), float('inf'))
+        return dfs(root, float('-inf'), float('inf'))
