@@ -15,6 +15,8 @@ class Solution(object):
         dfs(root, 0)
         return res[0]
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def sumNumbers(self, root):
         if not root: return 0
