@@ -18,6 +18,8 @@ class Solution(object):
         
         return count
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def goodNodes(self, root):
         if not root: return 0
