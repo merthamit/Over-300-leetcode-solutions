@@ -1,5 +1,9 @@
 # Adamın çözdüğü
 # Çözüm sayısı 0 | Hedef 5 çözüm
+
+
+
+# r > l şu işe yarıyor eğer [1] böyle bir şey verilirse çalıştırmıyor while döngüsünü ve l yi return ediyor 
 class Solution(object):
     def findPeakElement(self, nums):
         l, r = 0, len(nums) - 1
