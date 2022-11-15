@@ -11,6 +11,15 @@ class Solution(object):
             
         return col
 
+class Solution(object):
+    def titleToNumber(self, columnTitle):
+        col = 0
+        
+        for i in columnTitle:
+            col = col * 26 + (ord(i) - 64)
+        
+        return col
+
 # Burayı şöyle düşün 1 ler 10 lar 100 ler 1000 ler basamağı olarak düşün.
 # Basamak olarak 10*10 olarak atlamıyor 26*26 olarak atlıyor
 # Ord da ise sayının hangi rakama geldiğini buluyoruz
