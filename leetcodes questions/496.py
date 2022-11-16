@@ -14,6 +14,8 @@ class Solution(object):
             if arr[j] > i: return arr[j]
         return -1
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def nextGreaterElement(self, nums1, nums2):
         nums1Idx = { n: i for i, n in enumerate(nums1) }
