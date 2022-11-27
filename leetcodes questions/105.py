@@ -3,6 +3,11 @@ class TreeNode(object):
         self.val = val
         self.left = left
         self.right = right
+
+
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
+
 class Solution(object):
     def buildTree(self, preorder, inorder):
         if not preorder or not inorder: return
