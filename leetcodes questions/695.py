@@ -1,3 +1,5 @@
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def maxAreaOfIsland(self, grid):
         ROWS, COLS = len(grid), len(grid[0])
