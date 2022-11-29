@@ -19,6 +19,8 @@ class Solution(object):
         backTrack(0, 0, [])
         return res
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def combinationSum2(self, candidates, target):
         candidates.sort()
