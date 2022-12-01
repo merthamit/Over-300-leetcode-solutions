@@ -1,5 +1,7 @@
 import collections
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class MyStack(object):
 
     def __init__(self):
