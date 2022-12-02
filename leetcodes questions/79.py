@@ -1,3 +1,5 @@
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def exist(self, board, word):
         ROWS, COLS = len(board), len(board[0])
