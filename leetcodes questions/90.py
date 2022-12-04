@@ -24,3 +24,22 @@ class Solution(object):
             
         backTrack(0, [])
         return res
+
+class Solution(object):
+    def subsetsWithDup(self, nums):
+        nums.sort()
+        res = []
+        
+        def backTrack(i, curr):
+            res.append(curr[:])
+            
+            prev = None
+            for j in range(i, len(nums)):
+                if prev == nums[j]: continue
+                curr.append(nums[j])
+                backTrack(j+1, curr)
+                prev = nums[j]
+                curr.pop()
+            
+        backTrack(0, [])
+        return res
