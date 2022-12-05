@@ -33,6 +33,8 @@ class Solution(object):
             
         return res
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def findOrder(self, numCourses, prerequisites):
         preMap = collections.defaultdict(list)
