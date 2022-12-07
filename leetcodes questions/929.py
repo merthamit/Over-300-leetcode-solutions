@@ -11,9 +11,11 @@ class Solution(object):
             
         return len(emailsHash)
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def numUniqueEmails(self, emails):
-        emailsHash, res = set(), 0
+        emailsHash = set()
         
         for email in emails:
             i, local = 0, ''
