@@ -12,7 +12,7 @@ class Solution(object):
         
         while q:
             _,left = q[0]
-            _,right =  q[-1]
+            _,right = q[-1]
             width = max(width, right - left + 1)
             lng = len(q)
             print(left, right)
@@ -27,7 +27,8 @@ class Solution(object):
             
                         
         return width
-        
+# Also if we give an index to every node, at every level we can calculate the node position/index as follows:
+# Left node is positioned at 2i and Right node is positioned at 2i+1 where i is the index of current node we are exploring.n
         
         
         
