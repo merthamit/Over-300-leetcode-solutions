@@ -4,6 +4,8 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Codec:
     def serialize(self, root):
         res = []
