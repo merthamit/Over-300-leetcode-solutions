@@ -1,4 +1,5 @@
-# Definition for singly-linked list.
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
