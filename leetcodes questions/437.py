@@ -53,6 +53,28 @@ class Solution(object):
         
         dfs(root, 0)    
         return self.total
+
+class Solution(object):
+    def pathSum(self, root, targetSum):
+        self.res = 0
+        self.lookup = defaultdict(int)
+        self.lookup[0] = 1
+        
+        def dfs(root, rootSum):
+            if not root: return
+            
+            rootSum += root.val
+            self.res += self.lookup[rootSum - targetSum]
+            self.lookup[rootSum] += 1
+            
+            dfs(root.left, rootSum)
+            dfs(root.right, rootSum)
+            
+            self.lookup[rootSum] -= 1
+            
+        dfs(root, 0)
+        return self.res
+        
 # https://medium.com/geekculture/path-sum-iii-leetcode-437-588d8e56acac
 class Solution(object):
     def pathSum(self, root, targetSum):
