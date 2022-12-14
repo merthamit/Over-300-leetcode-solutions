@@ -57,7 +57,7 @@ class Solution(object):
 class Solution(object):
     def pathSum(self, root, targetSum):
         self.res = 0
-        self.lookup = defaultdict(int)
+        self.lookup = collections.defaultdict(int)
         self.lookup[0] = 1
         
         def dfs(root, rootSum):
