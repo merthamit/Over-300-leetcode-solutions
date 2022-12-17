@@ -7,11 +7,11 @@ class WordDictionary(object):
 
     def __init__(self):
         self.head = TrieNode()
-        self.max_word_length = 0
+        self.maxWordLength = 0
 
     def addWord(self, word):
         curr = self.head
-        self.max_word_length = max(self.max_word_length, len(word))
+        self.maxWordLength = max(self.maxWordLength, len(word))
 
         for ch in word:
             if ch not in curr.children:
@@ -21,7 +21,7 @@ class WordDictionary(object):
         curr.endOfWord = True
         
     def search(self, word):
-        if len(word) > self.max_word_length:
+        if len(word) > self.maxWordLength:
             return False
         def dfs(j, root):
             curr = root
