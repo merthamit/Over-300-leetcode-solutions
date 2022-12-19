@@ -54,6 +54,8 @@ class Solution(object):
         dfs(root, 0)    
         return self.total
 
+# Adamın çözdüğü
+# Çözüm sayısı 0 | Hedef 5 çözüm
 class Solution(object):
     def pathSum(self, root, targetSum):
         self.res = 0
