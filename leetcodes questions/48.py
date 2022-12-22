@@ -22,7 +22,7 @@ class Solution(object):
 
         return matrix
 
-
+# İlk dışdaki sayıları çeviriyoruz sonra katman katman ilerliyoruz.
 print(Solution().rotate([
     [1,2,3],
     [4,5,6],
