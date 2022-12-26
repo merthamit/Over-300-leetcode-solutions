@@ -22,4 +22,23 @@ class Solution(object):
             tail = tail.next
             
         return dummy.next
+
+class Solution(object):
+    def copyRandomList(self, head):
+        oldToCopy = { None: None }
+        
+        curr = head
+        while curr:
+            copy = Node(curr.val, [])
+            oldToCopy[curr] = copy
+            curr = curr.next
+        
+        curr = head
+        while curr:
+            copy = oldToCopy[curr]
+            copy.random = oldToCopy[curr.random]
+            copy.next = oldToCopy[curr.next]
+            curr = curr.next
+        
+        return oldToCopy[head]
             
