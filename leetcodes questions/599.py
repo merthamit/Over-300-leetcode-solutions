@@ -18,5 +18,23 @@ class Solution(object):
 
         return res
 
+class Solution(object):
+    def findRestaurant(self, list1, list2):
+        list1Hash = { s: i for i, s in enumerate(list1) }
+        list2Hash = { s: i for i, s in enumerate(list2) }
+        res, minTotal = [], float('inf')
+        
+        for i in list1Hash:
+            if i in list2Hash:
+                total = list1Hash[i] + list2Hash[i]
+                
+                if total < minTotal:
+                    minTotal = min(list1Hash[i] + list2Hash[i], minTotal)
+                    res = [i]
+                elif total == minTotal:
+                    res.append(i)
+                    
+        return res
+
 print(Solution().findRestaurant(
 ["Shogun","Tapioca Express","Burger King","KFC"],["KFC","Shogun","Burger King"]))
