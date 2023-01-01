@@ -14,10 +14,10 @@ class Solution(object):
         def dfs(root):
             if not root: return 0
             
-            leftMax = dfs(root.left)
-            rightMax = dfs(root.right)
-            leftMax = max(leftMax, 0)
-            rightMax = max(rightMax, 0)
+            left = dfs(root.left)
+            right = dfs(root.right)
+            leftMax = max(left, 0)
+            rightMax = max(right, 0)
             
             res[0] = max(res[0], root.val + leftMax + rightMax)
             
