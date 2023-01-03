@@ -32,3 +32,4 @@ class Solution(object):
             times += 1
     
         return times if fresh == 0 else -1
+# Neden fresh kullanılıyor çünkü en sonda ki freshe gelindiği zaman yani 1'e tekrar çalışıyor ve hiçbir şekilde q'ya ekleyeceği bir direction olmadığı için
