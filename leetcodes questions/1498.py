@@ -11,7 +11,7 @@ class Solution(object):
                 r -= 1
             
             if l <= r:
-                res += (2 ** (r - l))
+                res += (2 ** (r - l)) # ---> subsequence bulurken (2 ** len(nums)) - 1 diye buluyoruz [1,2,3] --> 2 ** 3 - 1 = 8 subsequenci var
                 res %= mod
             
             l += 1
