@@ -14,7 +14,4 @@ class Solution(object):
             stack.pop()
             k -= 1
         
-        if len(stack) != 1 and stack[0] == 0:
-            stack = stack[1:]
-        
         return str(int(''.join(stack)))
