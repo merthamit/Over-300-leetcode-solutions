@@ -8,7 +8,7 @@ class Solution(object):
         for i in range(len(nums)):
             res[i] = prefix
             prefix *= nums[i]
-        # Soldaki rakamları çarpıyor
+        # Soldaki rakamları çarpıyor prefix = 1 çünkü solunda rakam yok
         
         postfix = 1
         for i in range(len(nums)-1, -1, -1):
