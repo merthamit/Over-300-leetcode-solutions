@@ -34,4 +34,22 @@ class Solution(object):
         dfs(0, s)
         return res
             
+
+class Solution(object):
+    def letterCasePermutation(self, s):
+        res = set()
+        s = list(s)
         
+        def dfs(i, curr):
+            if len(s) == i:
+                res.add(''.join(curr))
+                return
+            
+            curr[i] = curr[i].upper()
+            dfs(i+1, curr)
+            curr[i] = curr[i].lower()
+            dfs(i+1, curr)
+            
+        
+        dfs(0, s)
+        return res
