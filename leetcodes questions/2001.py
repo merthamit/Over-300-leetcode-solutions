@@ -20,6 +20,6 @@ class Solution(object):
             
         for c in rectangleHash.values():
             if c > 1:
-                res += (c * (c - 1)) // 2
+                res += (c * (c - 1)) // 2 # --> 2 ye bölğyor çünkü duplicateleri alıyor.
         
         return res
